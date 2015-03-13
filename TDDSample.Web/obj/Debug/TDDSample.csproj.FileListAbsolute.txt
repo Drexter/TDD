@@ -1,0 +1,5 @@
+C:\Projects\TDD\TDDSample\bin\TDDSample.dll.config
+C:\Projects\TDD\TDDSample\bin\TDDSample.dll
+C:\Projects\TDD\TDDSample\bin\TDDSample.pdb
+C:\Projects\TDD\TDDSample\obj\Debug\TDDSample.dll
+C:\Projects\TDD\TDDSample\obj\Debug\TDDSample.pdb

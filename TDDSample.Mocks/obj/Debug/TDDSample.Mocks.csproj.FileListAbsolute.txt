@@ -1,0 +1,16 @@
+C:\Projects\TDD\TDDSample.Mocks\bin\Debug\TDDSample.Mocks.dll
+C:\Projects\TDD\TDDSample.Mocks\bin\Debug\TDDSample.Mocks.pdb
+C:\Projects\TDD\TDDSample.Mocks\obj\Debug\TDDSample.Mocks.dll
+C:\Projects\TDD\TDDSample.Mocks\obj\Debug\TDDSample.Mocks.pdb
+C:\Projects\TDD\TDDSample.Mocks\bin\Debug\TDDSample.dll
+C:\Projects\TDD\TDDSample.Mocks\bin\Debug\TDDSample.pdb
+C:\Projects\TDD\TDDSample.Mocks\obj\Debug\TDDSample.Mocks.csprojResolveAssemblyReference.cache
+C:\Projects\DotNet\TDD\TDDSample.Mocks\bin\Debug\TDDSample.Mocks.dll
+C:\Projects\DotNet\TDD\TDDSample.Mocks\bin\Debug\TDDSample.Mocks.pdb
+C:\Projects\DotNet\TDD\TDDSample.Mocks\obj\Debug\TDDSample.Mocks.csprojResolveAssemblyReference.cache
+C:\Projects\DotNet\TDD\TDDSample.Mocks\obj\Debug\TDDSample.Mocks.dll
+C:\Projects\DotNet\TDD\TDDSample.Mocks\obj\Debug\TDDSample.Mocks.pdb
+C:\Projects\DotNet\TDD\TDDSample.Mocks\bin\Debug\TDDSample.Data.dll
+C:\Projects\DotNet\TDD\TDDSample.Mocks\bin\Debug\TDDSample.Presenters.dll
+C:\Projects\DotNet\TDD\TDDSample.Mocks\bin\Debug\TDDSample.Data.pdb
+C:\Projects\DotNet\TDD\TDDSample.Mocks\bin\Debug\TDDSample.Presenters.pdb
