@@ -7,6 +7,7 @@ using System.Web.SessionState;
 using Autofac;
 using Autofac.Integration.Web;
 using TDDSample.Data.Data;
+using TDDSample.Mocks;
 
 
 namespace TDDSample.Web
@@ -23,9 +24,9 @@ namespace TDDSample.Web
         protected void Application_Start(object sender, EventArgs e)
         {
             var builder = new ContainerBuilder();
-            builder.RegisterType<Mocks.MockEmployeeData>().As<IEmployeeData>().SingleInstance();
+            //builder.RegisterType<MockEmployeeData>().As<IEmployeeData>().InstancePerRequest();
+            builder.RegisterType<EmployeeData>().As<IEmployeeData>().InstancePerRequest();
             _containerProvider = new ContainerProvider(builder.Build());
-           
         }
 
         protected void Session_Start(object sender, EventArgs e)
