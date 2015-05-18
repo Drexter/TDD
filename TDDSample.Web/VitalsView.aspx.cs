@@ -12,6 +12,10 @@ namespace TDDSample.Web
     public partial class VitalsView : System.Web.UI.Page, IVitalsView
     {
         private VitalsPresenter _presenter;
+        
+        /// <summary>
+        /// Injected property
+        /// </summary>
         public IEmployeeData Data { get; set; }
         
         protected void Page_Load(object sender, EventArgs e)
