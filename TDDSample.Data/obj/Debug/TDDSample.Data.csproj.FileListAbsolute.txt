@@ -1,5 +1,4 @@
 C:\Projects\DotNet\TDD\TDDSample.Data\bin\Debug\TDDSample.Data.dll
 C:\Projects\DotNet\TDD\TDDSample.Data\bin\Debug\TDDSample.Data.pdb
-C:\Projects\DotNet\TDD\TDDSample.Data\obj\Debug\TDDSample.Data.csprojResolveAssemblyReference.cache
 C:\Projects\DotNet\TDD\TDDSample.Data\obj\Debug\TDDSample.Data.dll
 C:\Projects\DotNet\TDD\TDDSample.Data\obj\Debug\TDDSample.Data.pdb
