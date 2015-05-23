@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="C:\Projects\DotNet\TDD\TDDSample.Tests\bin\Debug\TDDSample.Tests.exe" total="5" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-05-23" time="09:46:30">
+<test-results name="C:\Projects\DotNet\TDD\TDDSample.Tests\bin\Debug\TDDSample.Tests.exe" total="5" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-05-23" time="11:59:55">
   <environment nunit-version="2.6.2.12296" clr-version="2.0.50727.5485" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.6.2\bin" machine-name="HOMER-BOX" user="Homer" user-domain="Homer-Box" />
   <culture-info current-culture="en-US" current-uiculture="en-US" />
-  <test-suite type="Assembly" name="C:\Projects\DotNet\TDD\TDDSample.Tests\bin\Debug\TDDSample.Tests.exe" executed="True" result="Success" success="True" time="0.271" asserts="0">
+  <test-suite type="Assembly" name="C:\Projects\DotNet\TDD\TDDSample.Tests\bin\Debug\TDDSample.Tests.exe" executed="True" result="Success" success="True" time="0.312" asserts="0">
     <results>
-      <test-suite type="Namespace" name="TDDSample" executed="True" result="Success" success="True" time="0.253" asserts="0">
+      <test-suite type="Namespace" name="TDDSample" executed="True" result="Success" success="True" time="0.296" asserts="0">
         <results>
-          <test-suite type="Namespace" name="Tests" executed="True" result="Success" success="True" time="0.253" asserts="0">
+          <test-suite type="Namespace" name="Tests" executed="True" result="Success" success="True" time="0.296" asserts="0">
             <results>
-              <test-suite type="TestFixture" name="VitalsControllerTests" executed="True" result="Success" success="True" time="0.251" asserts="0">
+              <test-suite type="TestFixture" name="VitalsControllerTests" executed="True" result="Success" success="True" time="0.296" asserts="0">
                 <results>
-                  <test-case name="TDDSample.Tests.VitalsControllerTests.Test_EmployeeGridList_Has_Data" executed="True" result="Success" success="True" time="0.065" asserts="1" />
-                  <test-case name="TDDSample.Tests.VitalsControllerTests.Test_EmployeeList_Has_Data" executed="True" result="Success" success="True" time="0.001" asserts="1" />
-                  <test-case name="TDDSample.Tests.VitalsControllerTests.Test_EmployeeList_Has_FullName_Of_DoeJane" executed="True" result="Success" success="True" time="0.013" asserts="1" />
-                  <test-case name="TDDSample.Tests.VitalsControllerTests.Test_Name_And_SSN_Data_Is_Not_Valid" executed="True" result="Success" success="True" time="0.139" asserts="2" />
-                  <test-case name="TDDSample.Tests.VitalsControllerTests.Test_Name_And_SSN_Data_Is_Valid" executed="True" result="Success" success="True" time="0.007" asserts="1" />
+                  <test-case name="TDDSample.Tests.VitalsControllerTests.Test_EmployeeGridList_Has_Data" executed="True" result="Success" success="True" time="0.094" asserts="1" />
+                  <test-case name="TDDSample.Tests.VitalsControllerTests.Test_EmployeeList_Has_Data" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                  <test-case name="TDDSample.Tests.VitalsControllerTests.Test_EmployeeList_Has_FullName_Of_DoeJane" executed="True" result="Success" success="True" time="0.016" asserts="1" />
+                  <test-case name="TDDSample.Tests.VitalsControllerTests.Test_Name_And_SSN_Data_Is_Not_Valid" executed="True" result="Success" success="True" time="0.140" asserts="2" />
+                  <test-case name="TDDSample.Tests.VitalsControllerTests.Test_Name_And_SSN_Data_Is_Valid" executed="True" result="Success" success="True" time="0.016" asserts="1" />
                 </results>
               </test-suite>
             </results>
