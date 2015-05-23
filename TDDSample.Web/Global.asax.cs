@@ -25,7 +25,11 @@ namespace TDDSample.Web
         protected void Application_Start(object sender, EventArgs e)
         {
             var builder = new ContainerBuilder();
+
+            //MOCKED DATA: Uncomment if you want to use it.
             //builder.RegisterType<MockEmployeeData>().As<IEmployeeData>().InstancePerRequest();
+
+            //DB DATA: Actual Data coming from the database.
             builder.RegisterType<EmployeeData>().As<IEmployeeData>().InstancePerRequest();
             _containerProvider = new ContainerProvider(builder.Build());
         }
