@@ -39,7 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IVitalsView.cs" />
+    <Compile Include="Infrasructure\IVitalsView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VitalsPresenter.cs" />
   </ItemGroup>

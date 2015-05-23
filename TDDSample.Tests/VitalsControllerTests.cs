@@ -1,7 +1,8 @@
 ﻿using NUnit.Framework;
-using TDDSample.Data.Data;
+using TDDSample.Data.Infrastructure;
 using TDDSample.Mocks;
 using TDDSample.Presenters;
+using TDDSample.Presenters.Infrasructure;
 
 
 namespace TDDSample.Tests

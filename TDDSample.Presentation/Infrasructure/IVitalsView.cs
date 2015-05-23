@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using TDDSample.Data.Model;
 
-namespace TDDSample.Presenters
+namespace TDDSample.Presenters.Infrasructure
 {
     public interface IVitalsView
     {

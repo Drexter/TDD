@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using TDDSample.Data.Data;
+using TDDSample.Data.Infrastructure;
 using TDDSample.Data.Model;
 
 namespace TDDSample.Mocks

@@ -6,8 +6,9 @@ using System.Web.Security;
 using System.Web.SessionState;
 using Autofac;
 using Autofac.Integration.Web;
-using TDDSample.Data.Data;
-using TDDSample.Mocks;
+using TDDSample.Data;
+using TDDSample.Data.Infrastructure;
+
 
 
 namespace TDDSample.Web

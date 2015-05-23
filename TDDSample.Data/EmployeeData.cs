@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using TDDSample.Data.Infrastructure;
 using TDDSample.Data.Model;
 
-namespace TDDSample.Data.Data
+namespace TDDSample.Data
 {
     public class EmployeeData : IEmployeeData
     {

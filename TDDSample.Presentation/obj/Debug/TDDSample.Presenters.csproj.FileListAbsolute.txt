@@ -1,7 +1,7 @@
-C:\Projects\DotNet\TDD\TDDSample.Presentation\obj\Debug\TDDSample.Presenters.csprojResolveAssemblyReference.cache
 C:\Projects\DotNet\TDD\TDDSample.Presentation\bin\Debug\TDDSample.Presenters.dll
 C:\Projects\DotNet\TDD\TDDSample.Presentation\bin\Debug\TDDSample.Presenters.pdb
 C:\Projects\DotNet\TDD\TDDSample.Presentation\bin\Debug\TDDSample.Data.dll
 C:\Projects\DotNet\TDD\TDDSample.Presentation\bin\Debug\TDDSample.Data.pdb
+C:\Projects\DotNet\TDD\TDDSample.Presentation\obj\Debug\TDDSample.Presenters.csprojResolveAssemblyReference.cache
 C:\Projects\DotNet\TDD\TDDSample.Presentation\obj\Debug\TDDSample.Presenters.dll
 C:\Projects\DotNet\TDD\TDDSample.Presentation\obj\Debug\TDDSample.Presenters.pdb
