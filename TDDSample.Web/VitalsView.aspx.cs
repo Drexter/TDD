@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
+using System.Web.UI.WebControls;
 using TDDSample.Data.Infrastructure;
 using TDDSample.Data.Model;
 using TDDSample.Presenters;
@@ -43,6 +44,12 @@ namespace TDDSample.Web
             set { ssnTextbox.Text = value; }
         }
 
+        public string EmployeeId
+        {
+            get { return ddlTest.Text; }
+            set { ddlTest.SelectedValue = value; }
+        }
+
         public string ErrorMessage
         {
             get { return errorMessageLabel.Text; }
@@ -53,10 +60,12 @@ namespace TDDSample.Web
         {
             set
             {
+                
                 ddlTest.DataSource = value;
                 ddlTest.DataTextField = "FullName";
                 ddlTest.DataValueField = "EmployeeId";
                 ddlTest.DataBind();
+                ddlTest.Items.Insert(0, new ListItem(string.Empty, string.Empty));
             }
         }
 
@@ -77,8 +86,7 @@ namespace TDDSample.Web
 
         protected void btnGetUser_Click(object sender, EventArgs e)
         {
-            int userId = Convert.ToInt32(ddlTest.SelectedValue);
-            _presenter.GetEmployeeGridListById(userId);
+            _presenter.RefreshGridView();
         }
     }
 }

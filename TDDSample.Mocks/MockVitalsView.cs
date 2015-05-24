@@ -16,5 +16,9 @@ namespace TDDSample.Mocks
         public string ErrorMessage { get; set; }
 
         public List<Employee> EmployeeGridList { private get; set; }
+
+
+        public string EmployeeId { get; set; }
+
     }
 }

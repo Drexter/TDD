@@ -1,21 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="C:\Projects\DotNet\TDD\TDDSample.Tests\bin\Debug\TDDSample.Tests.exe" total="5" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-05-23" time="18:37:48">
+<test-results name="C:\Projects\DotNet\TDD\TDDSample.Tests\bin\Debug\TDDSample.Tests.exe" total="8" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-05-24" time="13:30:37">
   <environment nunit-version="2.6.2.12296" clr-version="2.0.50727.5485" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.6.2\bin" machine-name="HOMER-BOX" user="Homer" user-domain="Homer-Box" />
   <culture-info current-culture="en-US" current-uiculture="en-US" />
-  <test-suite type="Assembly" name="C:\Projects\DotNet\TDD\TDDSample.Tests\bin\Debug\TDDSample.Tests.exe" executed="True" result="Success" success="True" time="0.312" asserts="0">
+  <test-suite type="Assembly" name="C:\Projects\DotNet\TDD\TDDSample.Tests\bin\Debug\TDDSample.Tests.exe" executed="True" result="Success" success="True" time="0.016" asserts="0">
     <results>
-      <test-suite type="Namespace" name="TDDSample" executed="True" result="Success" success="True" time="0.296" asserts="0">
+      <test-suite type="Namespace" name="TDDSample" executed="True" result="Success" success="True" time="0.016" asserts="0">
         <results>
-          <test-suite type="Namespace" name="Tests" executed="True" result="Success" success="True" time="0.296" asserts="0">
+          <test-suite type="Namespace" name="Tests" executed="True" result="Success" success="True" time="0.016" asserts="0">
             <results>
-              <test-suite type="TestFixture" name="VitalsControllerTests" executed="True" result="Success" success="True" time="0.281" asserts="0">
+              <test-suite type="TestFixture" name="VitalsControllerTests" executed="True" result="Success" success="True" time="0.016" asserts="0">
                 <results>
-                  <test-case name="TDDSample.Tests.VitalsControllerTests.EmployeeGridList_Has_Data" executed="True" result="Success" success="True" time="0.078" asserts="1" />
+                  <test-case name="TDDSample.Tests.VitalsControllerTests.Display_Message_When_No_User_Is_Selected_In_Dropdown" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                  <test-case name="TDDSample.Tests.VitalsControllerTests.Display_No_Message_When_User_Is_Selected_In_Dropdown" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                  <test-case name="TDDSample.Tests.VitalsControllerTests.DropDownList_Value_Is_Not_Valid" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                  <test-case name="TDDSample.Tests.VitalsControllerTests.EmployeeGridList_Has_Data" executed="True" result="Success" success="True" time="0.000" asserts="1" />
                   <test-case name="TDDSample.Tests.VitalsControllerTests.EmployeeList_Has_Data" executed="True" result="Success" success="True" time="0.000" asserts="1" />
-                  <test-case name="TDDSample.Tests.VitalsControllerTests.Name_And_SSN_Data_Are_Valid" executed="True" result="Success" success="True" time="0.156" asserts="1" />
+                  <test-case name="TDDSample.Tests.VitalsControllerTests.Name_And_SSN_Data_Are_Valid" executed="True" result="Success" success="True" time="0.000" asserts="1" />
                   <test-case name="TDDSample.Tests.VitalsControllerTests.Name_And_SSN_Data_Is_Not_Valid" executed="True" result="Success" success="True" time="0.000" asserts="2" />
-                  <test-case name="TDDSample.Tests.VitalsControllerTests.Search_EmployeeList_By_Id_Returns_Charles_Smith" executed="True" result="Success" success="True" time="0.031" asserts="1" />
+                  <test-case name="TDDSample.Tests.VitalsControllerTests.Search_EmployeeList_By_Id_Returns_Charles_Smith" executed="True" result="Success" success="True" time="0.000" asserts="1" />
                 </results>
               </test-suite>
             </results>

@@ -79,5 +79,41 @@ namespace TDDSample.Tests
 
             Assert.AreEqual("Smith, Charles", fullName);
         }
+
+        [Test]
+        public void DropDownList_Value_Is_Not_Valid()
+        {
+            var view = new MockVitalsView();
+            var controller = new VitalsPresenter(view);
+
+            view.EmployeeId = "";
+            
+            Assert.IsFalse(controller.IsValidEmployeeId());
+        }
+
+        [Test]
+        public void Display_Message_When_No_User_Is_Selected_In_Dropdown()
+        {
+            var view = new MockVitalsView();
+            var controller = new VitalsPresenter(view);
+            
+            view.EmployeeId = string.Empty;
+            controller.RefreshGridView();
+
+            Assert.AreEqual(view.ErrorMessage, VitalsPresenter.ERROR_MESSAGE_BAD_EMPLOYEE_ID);
+        }
+
+        [Test]
+        public void Display_No_Message_When_User_Is_Selected_In_Dropdown()
+        {
+            var view = new MockVitalsView();
+            IEmployeeData data = new MockEmployeeData();
+            var controller = new VitalsPresenter(view, data);
+            
+            view.EmployeeId = "1";
+            controller.RefreshGridView();
+
+            Assert.AreEqual(view.ErrorMessage, string.Empty);
+        }
     }
 }

@@ -8,6 +8,7 @@ namespace TDDSample.Presenters.Infrasructure
         string Name { get; set; }
         string SSN { get; set; }
         string ErrorMessage { get; set; }
+        string EmployeeId { get; set; }
         List<Employee> EmployeeList { set; }
         List<Employee> EmployeeGridList { set; }
     }
