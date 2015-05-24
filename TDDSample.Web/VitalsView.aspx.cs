@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using TDDSample.Data.Infrastructure;
 using TDDSample.Data.Model;
 using TDDSample.Presenters;
@@ -22,14 +23,12 @@ namespace TDDSample.Web
         protected void Page_Load(object sender, EventArgs e)
         {
             _presenter = new VitalsPresenter(this, Data);
-            _presenter.GetEmployeeList();
-            _presenter.GetEmployeeGridList();
-        }
-
-        protected void okButton_Click(object sender, EventArgs e)
-        {
-            if (_presenter.OnOk() == true)
-                Response.Redirect("ThankYou.aspx");
+            
+            if (!Page.IsPostBack)
+            {
+                _presenter.GetEmployeeList();
+                _presenter.GetEmployeeGridList();
+            }
         }
 
         public string Name
@@ -68,6 +67,18 @@ namespace TDDSample.Web
                 grdViewEmployee.DataSource = value;
                 grdViewEmployee.DataBind();
             }
+        }
+
+        protected void okButton_Click(object sender, EventArgs e)
+        {
+            if (_presenter.OnOk() == true)
+                Response.Redirect("ThankYou.aspx");
+        }
+
+        protected void btnGetUser_Click(object sender, EventArgs e)
+        {
+            int userId = Convert.ToInt32(ddlTest.SelectedValue);
+            _presenter.GetEmployeeGridListById(userId);
         }
     }
 }

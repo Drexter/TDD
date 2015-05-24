@@ -29,7 +29,9 @@
         </tr>
         <tr>
             <td></td>
-            <td><asp:DropDownList runat="server" ID="ddlTest"></asp:DropDownList></td>
+            <td><asp:DropDownList runat="server" ID="ddlTest"></asp:DropDownList>
+                <asp:Button ID="btnGetUser" runat="server" OnClick="btnGetUser_Click" Text="Get User" />
+            </td>
         </tr>
         <tr>
             <td></td>

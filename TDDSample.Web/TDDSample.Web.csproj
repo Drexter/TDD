@@ -107,6 +107,10 @@
       <Project>{6e087995-694d-4049-8a51-e9cbe83e5420}</Project>
       <Name>TDDSample.Data</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TDDSample.Mocks\TDDSample.Mocks.csproj">
+      <Project>{9A00E87F-486F-4EFC-819D-3E9BD93BD5FE}</Project>
+      <Name>TDDSample.Mocks</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TDDSample.Presentation\TDDSample.Presenters.csproj">
       <Project>{fb8753ed-b42c-4a81-8289-7ab166172b80}</Project>
       <Name>TDDSample.Presenters</Name>

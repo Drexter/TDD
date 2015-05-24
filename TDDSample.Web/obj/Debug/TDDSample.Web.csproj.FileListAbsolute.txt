@@ -25,3 +25,5 @@ C:\Projects\DotNet\TDD\TDDSample.Web\bin\Autofac.Integration.Web.xml
 C:\Projects\DotNet\TDD\TDDSample.Web\obj\Debug\TDDSample.Web.csprojResolveAssemblyReference.cache
 C:\Projects\DotNet\TDD\TDDSample.Web\obj\Debug\TDDSample.Web.dll
 C:\Projects\DotNet\TDD\TDDSample.Web\obj\Debug\TDDSample.Web.pdb
+C:\Projects\DotNet\TDD\TDDSample.Web\bin\TDDSample.Mocks.dll
+C:\Projects\DotNet\TDD\TDDSample.Web\bin\TDDSample.Mocks.pdb

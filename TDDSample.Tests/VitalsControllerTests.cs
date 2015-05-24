@@ -1,5 +1,7 @@
-﻿using NUnit.Framework;
+﻿using System.Collections.Generic;
+using NUnit.Framework;
 using TDDSample.Data.Infrastructure;
+using TDDSample.Data.Model;
 using TDDSample.Mocks;
 using TDDSample.Presenters;
 using TDDSample.Presenters.Infrasructure;
@@ -11,7 +13,7 @@ namespace TDDSample.Tests
     public class VitalsControllerTests
     {
         [Test]
-        public void Test_Name_And_SSN_Data_Is_Valid()
+        public void Name_And_SSN_Data_Are_Valid()
         {
             var view = new MockVitalsView();
             var controller = new VitalsPresenter(view);            
@@ -23,7 +25,7 @@ namespace TDDSample.Tests
         }
 
         [Test]
-        public void Test_Name_And_SSN_Data_Is_Not_Valid()
+        public void Name_And_SSN_Data_Is_Not_Valid()
         {
             var view = new MockVitalsView();
             var controller = new VitalsPresenter(view);
@@ -38,7 +40,7 @@ namespace TDDSample.Tests
         }
 
         [Test]
-        public void Test_EmployeeList_Has_Data()
+        public void EmployeeList_Has_Data()
         {
             IVitalsView view = new MockVitalsView();
             IEmployeeData data = new MockEmployeeData();
@@ -49,25 +51,7 @@ namespace TDDSample.Tests
         }
 
         [Test]
-        public void Test_EmployeeList_Has_FullName_Of_DoeJane()
-        {
-            IVitalsView view = new MockVitalsView();
-            IEmployeeData data = new MockEmployeeData();
-            
-            var presenter = new VitalsPresenter(view, data);
-            var empList = presenter.GetEmployeeList();
-
-            string fullName = string.Empty;
-            foreach (var emp in empList)
-            {
-                fullName = emp.FullName;
-            }
-
-            Assert.AreEqual("Doe, Jane", fullName);
-        }
-
-        [Test]
-        public void Test_EmployeeGridList_Has_Data()
+        public void EmployeeGridList_Has_Data()
         {
             IVitalsView view = new MockVitalsView();
             IEmployeeData data = new MockEmployeeData();
@@ -75,6 +59,25 @@ namespace TDDSample.Tests
             var presenter = new VitalsPresenter(view, data);
 
             Assert.IsTrue(presenter.GetEmployeeGridList().Count > 0);
+        }
+
+        [Test]
+        public void Search_EmployeeList_By_Id_Returns_Charles_Smith()
+        {
+            IVitalsView view = new MockVitalsView();
+            IEmployeeData data = new MockEmployeeData();
+
+            var presenter = new VitalsPresenter(view, data);
+
+            List<Employee> emp =  presenter.GetEmployeeGridListById(2);
+
+            string fullName = string.Empty;
+            foreach(var item in emp)
+            {
+                fullName = item.FullName;
+            }
+
+            Assert.AreEqual("Smith, Charles", fullName);
         }
     }
 }

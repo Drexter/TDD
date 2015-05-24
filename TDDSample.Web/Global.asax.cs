@@ -3,6 +3,7 @@ using Autofac;
 using Autofac.Integration.Web;
 using TDDSample.Data;
 using TDDSample.Data.Infrastructure;
+using TDDSample.Mocks;
 
 namespace TDDSample.Web
 {
@@ -20,10 +21,10 @@ namespace TDDSample.Web
             var builder = new ContainerBuilder();
 
             //MOCKED DATA: Uncomment if you want to use it.
-            //builder.RegisterType<MockEmployeeData>().As<IEmployeeData>().InstancePerRequest();
+            builder.RegisterType<MockEmployeeData>().As<IEmployeeData>().InstancePerRequest();
 
             //DB DATA: Actual Data coming from the database.
-            builder.RegisterType<EmployeeData>().As<IEmployeeData>().InstancePerRequest();
+            //builder.RegisterType<EmployeeData>().As<IEmployeeData>().InstancePerRequest();
             _containerProvider = new ContainerProvider(builder.Build());
         }
 

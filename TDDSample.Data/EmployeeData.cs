@@ -14,5 +14,11 @@ namespace TDDSample.Data
             empList.Add(emp1);
             return empList;
         }
+
+
+        public List<Employee> GetEmployeeListById(int Id)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

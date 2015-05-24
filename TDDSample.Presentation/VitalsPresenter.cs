@@ -64,5 +64,10 @@ namespace TDDSample.Presenters
         {
             return _view.EmployeeGridList = _data.GetEmployeeList();
         }
+
+        public List<Employee> GetEmployeeGridListById(int Id)
+        {
+            return _view.EmployeeGridList = _data.GetEmployeeListById(Id);
+        }
     }
 }
