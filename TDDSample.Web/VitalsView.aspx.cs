@@ -27,8 +27,7 @@ namespace TDDSample.Web
             
             if (!Page.IsPostBack)
             {
-                _presenter.GetEmployeeList();
-                _presenter.GetEmployeeGridList();
+               _presenter.Initialize();
             }
         }
 
@@ -60,7 +59,6 @@ namespace TDDSample.Web
         {
             set
             {
-                
                 ddlTest.DataSource = value;
                 ddlTest.DataTextField = "FullName";
                 ddlTest.DataValueField = "EmployeeId";

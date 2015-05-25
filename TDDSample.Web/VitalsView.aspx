@@ -27,6 +27,9 @@
           <td> </td>
           <td><asp:Button runat="server" id="okButton" Text="OK" OnClick="okButton_Click" /></td>
         </tr>
+        </table>
+        <hr/>
+        <table>
         <tr>
             <td></td>
             <td><asp:DropDownList runat="server" ID="ddlTest"></asp:DropDownList>

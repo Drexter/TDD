@@ -26,6 +26,12 @@ namespace TDDSample.Presenters
             _data = data;
         }
 
+        public void Initialize()
+        {
+            GetEmployeeList();
+            GetEmployeeGridList();
+        }
+
         public bool OnOk()
         {
             if (IsValidName() == false)

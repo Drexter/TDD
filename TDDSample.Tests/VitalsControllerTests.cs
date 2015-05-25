@@ -16,27 +16,27 @@ namespace TDDSample.Tests
         public void Name_And_SSN_Data_Are_Valid()
         {
             var view = new MockVitalsView();
-            var controller = new VitalsPresenter(view);            
+            var presenter = new VitalsPresenter(view);            
 
             view.Name = "John Doe";
             view.SSN = "123-45-6789";
 
-            Assert.IsTrue(controller.OnOk());
+            Assert.IsTrue(presenter.OnOk());
         }
 
         [Test]
         public void Name_And_SSN_Data_Is_Not_Valid()
         {
             var view = new MockVitalsView();
-            var controller = new VitalsPresenter(view);
+            var presenter = new VitalsPresenter(view);
 
             view.Name = "";
             view.SSN = "123-45-6789";
-            Assert.IsFalse(controller.OnOk());
+            Assert.IsFalse(presenter.OnOk());
             
             view.Name = "John Doe";
             view.SSN = "";
-            Assert.IsFalse(controller.OnOk());            
+            Assert.IsFalse(presenter.OnOk());            
         }
 
         [Test]
@@ -114,6 +114,19 @@ namespace TDDSample.Tests
             controller.RefreshGridView();
 
             Assert.AreEqual(view.ErrorMessage, string.Empty);
+        }
+
+        [Test]
+        public void Initialize_View()
+        {
+            var view = new MockVitalsView();
+            IEmployeeData data = new MockEmployeeData();
+            var presenter = new VitalsPresenter(view, data);
+
+            presenter.Initialize();
+
+            Assert.Greater(presenter.GetEmployeeGridList().Count, 1);
+
         }
     }
 }
