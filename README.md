@@ -1,7 +1,7 @@
 # TDD
 Sample ASP.NET Web Forms project utilizing TDD and MVP
 
-The purpose of this project is to create a standard way of building projects in ASP.NET Web Forms.  I've worked in many projects and seen how quickly it can get dis-organized such has having the data layer mixed in with the presentation layer on the web form then having another separate DAL layer in a separate file.  I do understand it may be due to tight time constraints but a common best practice will make maintenance easier in the long run.
+The purpose of this project is to create a standard way of building projects in ASP.NET Web Forms.  I've worked in many projects and seen how quickly it can get disorganized such has having the data layer mixed in with the presentation layer on the web form then having another separate DAL layer in a separate file.  I do understand it may be due to tight time constraints but a common best practice will make maintenance easier in the long run.
 
 The TDDSample project is broken down into the following projects.  This should be the mandatory projects required to create the web application.  Create other projects as needed.
 TDDSample.Data - contains the data layer that will make calls to the database
