@@ -6,11 +6,10 @@ using TDDSample.Mocks;
 using TDDSample.Presenters;
 using TDDSample.Presenters.Infrasructure;
 
-
 namespace TDDSample.Tests
 {
     [TestFixture]
-    public class VitalsControllerTests
+    public class VitalsPresenterTests
     {
         [Test]
         public void Name_And_SSN_Data_Are_Valid()
@@ -84,21 +83,21 @@ namespace TDDSample.Tests
         public void DropDownList_Value_Is_Not_Valid()
         {
             var view = new MockVitalsView();
-            var controller = new VitalsPresenter(view);
+            var presenter = new VitalsPresenter(view);
 
             view.EmployeeId = "";
             
-            Assert.IsFalse(controller.IsValidEmployeeId());
+            Assert.IsFalse(presenter.IsValidEmployeeId());
         }
 
         [Test]
         public void Display_Message_When_No_User_Is_Selected_In_Dropdown()
         {
             var view = new MockVitalsView();
-            var controller = new VitalsPresenter(view);
+            var presenter = new VitalsPresenter(view);
             
             view.EmployeeId = string.Empty;
-            controller.RefreshGridView();
+            presenter.RefreshGridView();
 
             Assert.AreEqual(view.ErrorMessage, VitalsPresenter.ERROR_MESSAGE_BAD_EMPLOYEE_ID);
         }
@@ -108,10 +107,10 @@ namespace TDDSample.Tests
         {
             var view = new MockVitalsView();
             IEmployeeData data = new MockEmployeeData();
-            var controller = new VitalsPresenter(view, data);
+            var presenter = new VitalsPresenter(view, data);
             
             view.EmployeeId = "1";
-            controller.RefreshGridView();
+            presenter.RefreshGridView();
 
             Assert.AreEqual(view.ErrorMessage, string.Empty);
         }
