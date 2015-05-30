@@ -1,5 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="VitalsView.aspx.cs" Inherits="TDDSample.Web.VitalsView" %>
 
+<%@ Register src="UserControls/Header.ascx" tagname="Header" tagprefix="uc1" %>
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -11,6 +13,8 @@
     <form id="form1" runat="server">
     <div>
         <table border="0">
+        <tr><td>Username:</td><td><uc1:Header ID="Header1" runat="server" />
+            </td></tr>
         <tr>
           <td>Name:</td>
           <td><asp:Textbox runat="server" id="nameTextbox" /></td>

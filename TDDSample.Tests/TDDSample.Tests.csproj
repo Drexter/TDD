@@ -48,9 +48,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TestFixtures\HeaderPresenterTests.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="VitalsPresenterTests.cs" />
+    <Compile Include="TestFixtures\VitalsPresenterTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

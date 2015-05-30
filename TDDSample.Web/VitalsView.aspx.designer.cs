@@ -22,6 +22,15 @@ namespace TDDSample.Web {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// Header1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::TDDSample.Web.UserControls.HelloWorld Header1;
+        
+        /// <summary>
         /// nameTextbox control.
         /// </summary>
         /// <remarks>

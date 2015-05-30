@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MockEmployeeList.cs" />
+    <Compile Include="MockHeaderView.cs" />
     <Compile Include="MockVitalsView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

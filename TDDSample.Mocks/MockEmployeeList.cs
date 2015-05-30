@@ -13,11 +13,11 @@ namespace TDDSample.Mocks
         {
             var empList = new List<Employee>();
 
-            var emp1 = new Employee {EmployeeId = 1, FirstName = "Jane", LastName = "Doe"};
+            var emp1 = new Employee {EmployeeId = 1, FirstName = "Jane", LastName = "Doe", Username = "JDoe"};
             emp1.FullName = string.Format("{0}, {1}", emp1.LastName, emp1.FirstName);
             empList.Add(emp1);
 
-            var emp2 = new Employee { EmployeeId = 2, FirstName = "Charles", LastName = "Smith" };
+            var emp2 = new Employee { EmployeeId = 2, FirstName = "Charles", LastName = "Smith", Username = "CSmith"};
             emp2.FullName = string.Format("{0}, {1}", emp2.LastName, emp2.FirstName);
             empList.Add(emp2);
 
@@ -28,11 +28,11 @@ namespace TDDSample.Mocks
         {
             var empList = new List<Employee>();
 
-            var emp1 = new Employee { EmployeeId = 1, FirstName = "Jane", LastName = "Doe" };
+            var emp1 = new Employee { EmployeeId = 1, FirstName = "Jane", LastName = "Doe", Username = "JDoe"};
             emp1.FullName = string.Format("{0}, {1}", emp1.LastName, emp1.FirstName);
             empList.Add(emp1);
 
-            var emp2 = new Employee { EmployeeId = 2, FirstName = "Charles", LastName = "Smith" };
+            var emp2 = new Employee { EmployeeId = 2, FirstName = "Charles", LastName = "Smith", Username = "CSmith" };
             emp2.FullName = string.Format("{0}, {1}", emp2.LastName, emp2.FirstName);
             empList.Add(emp2);
 
